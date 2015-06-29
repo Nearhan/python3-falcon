@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+# run main server
+# available at localdocker:5000
+gunicorn -b 0.0.0.0:5000 main:app
